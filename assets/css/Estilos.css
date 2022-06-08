@@ -1,0 +1,102 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #a0fff6;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 2;
+}
+
+.header-content{
+    max-width: 1200px;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+}
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .logo h1 b {
+        color:  #f70b0b ;
+    }
+.menu {
+    height: 80px;
+}
+.menu nav{
+    height: 100%;
+}
+
+.menu nav ul {
+   height: 100%;
+   display: flex;
+   list-style: none;
+}
+
+.menu nav ul li{
+   height: 100%;
+   margin: 0px 20px;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   position: relative;
+
+}
+.menu-selected:before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #fd0000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+    .menu nav ul li a {
+        color: #777777;
+        
+    }
+        .menu nav ul li a:hover {
+            color: #fd0000;
+        }
+.menu .text-menu-selected {
+    color: #fc1c0a;
+}
+
+/*Portada*/
+.container-cover{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 80px;
+    background-image: url(../img/porta01.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer {
+    width: 100%;
+    height: 80px;
+    background: black;
+    color: white;
+    float: left;
+    position: fixed;
+    bottom: 0;
+}
+.foot p{
+    text-align: center;
+    padding:20px;
+    color: white;
+}
+
